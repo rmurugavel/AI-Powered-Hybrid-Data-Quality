@@ -1,1 +1,14 @@
-
+consultant_id,commission_amount,payment_period,product_sku,sales_volume,consultant_title,adjustment_note,dispute_reason
+C-10001,1500.00,2023-10,SKU-A1,150,Director,,
+C-10002,1850.50,2023-10,SKU-A2,185,Executive,Commission override approved by Finance Director Jane Doe due to Q3 promo error - ref approval #2024-891,
+C-10003,500.00,2023-10,SKU-B1,50,Associate,adjusted per email,
+C-10004,200.00,2023-10,SKU-C1,20,Consultant,,Consultant disputes October payment - claims 3 units sold in Market A were not credited. Supporting order numbers: ORD-4421 ORD-4422.
+C-10005,350.00,2023-10,SKU-A1,35,Consultant,,wrong amount paid fix it
+C-10001,1500.00,2023-10,SKU-A1,150,Director,,
+C-10006,,2023-10,SKU-B1,40,Associate,System auto-correction applied ref #999,
+C-10007,0.00,2023-10,SKU-C1,10,Consultant,,Why did I get zero dollars? Order ORD-8881.
+C-10008,125000.00,2023-10,SKU-A1,10,Associate,system glitch maybe?,
+C-10009,450.00,2023-10,SKU-B2,45,Consultant,see slack message from boss,
+C-10010,800.00,2023-10,SKU-A1,80,Director,Override code 44A applied per policy doc,Missing $50 from October payout for order ORD-1111.
+C-10011,920.00,2023-10,SKU-B1,92,Executive,,did not get paid for my sales
+C-10012,1100.00,2023-10,SKU-A2,110,Associate,Approved by Ops VP for manual true-up - Ticket JIRA-8821,
