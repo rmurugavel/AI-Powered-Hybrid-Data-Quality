@@ -1,0 +1,33 @@
+{
+  "cdes": [
+    {
+      "field": "consultant_id",
+      "validation_type": "sql",
+      "rule": "not_null_and_unique",
+      "owner": "Operations",
+      "failure_impact": "Commission cannot be routed"
+    },
+    {
+      "field": "commission_amount",
+      "validation_type": "sql",
+      "rule": "not_null_not_zero_within_range",
+      "range_threshold": 0.05,
+      "owner": "Finance",
+      "failure_impact": "Incorrect payment amount"
+    },
+    {
+      "field": "adjustment_note",
+      "validation_type": "ai",
+      "rule": "Must contain a clear business justification with approver reference or reason code. Vague entries like 'adjusted' or 'see email' fail.",
+      "owner": "Finance",
+      "failure_impact": "Audit trail incomplete — no justification for override"
+    },
+    {
+      "field": "dispute_reason",
+      "validation_type": "ai",
+      "rule": "Must identify the specific payment issue, the amount in question, and reference at least one supporting order number or date. Generic complaints fail.",
+      "owner": "Operations",
+      "failure_impact": "Dispute cannot be investigated without specific details"
+    }
+  ]
+}
